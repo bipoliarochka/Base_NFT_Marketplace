@@ -20,7 +20,6 @@ async function analyzeNFTMarketplacePerformance() {
   };
   
   try {
-
     const performanceMetrics = await marketplace.getPerformanceMetrics();
     performanceReport.performanceMetrics = {
       responseTime: performanceMetrics.responseTime.toString(),
